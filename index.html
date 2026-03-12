@@ -5,7 +5,6 @@
 
 <meta charset="UTF-8">
 <title>Tzu-Hsuan Yang | Data Analyst</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -115,33 +114,42 @@ margin-bottom:25px;
 
 /* SKILLS */
 
-.skills-category{
-margin-bottom:40px;
+.skill-compare{
+margin-bottom:30px;
 }
 
 .skill-row{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+grid-template-columns:60px 1fr;
+gap:8px;
+align-items:center;
 }
 
-.skill-item{
-background:#f8fafc;
-padding:15px;
-border-radius:8px;
+.label{
+font-size:12px;
+opacity:0.7;
 }
 
-.skill-bar{
-height:8px;
+.bar{
 background:#e5e7eb;
-border-radius:20px;
-margin-top:6px;
+height:8px;
+border-radius:10px;
 overflow:hidden;
 }
 
-.skill-fill{
+.me{
+background:#3b82f6;
 height:100%;
-background:#2563eb;
+}
+
+.mid{
+background:#10b981;
+height:100%;
+}
+
+.senior{
+background:#111827;
+height:100%;
 }
 
 /* EXPERIENCE */
@@ -219,8 +227,6 @@ text-align:center;
 
 <body>
 
-<!-- NAVBAR -->
-
 <nav>
 
 <div class="nav-container">
@@ -241,7 +247,6 @@ text-align:center;
 
 </nav>
 
-<!-- HERO -->
 
 <header>
 
@@ -261,10 +266,8 @@ Double Major: Statistics · Minor: Computer Science
 </p>
 
 <p>
-
 <a href="mailto:a0984311925@gmail.com" style="color:#93c5fd">Email</a> |
 <a href="https://github.com/papayaya123" style="color:#93c5fd">GitHub</a>
-
 </p>
 
 </div>
@@ -273,7 +276,6 @@ Double Major: Statistics · Minor: Computer Science
 
 </header>
 
-<!-- ABOUT -->
 
 <section id="about" class="container">
 
@@ -287,13 +289,7 @@ I am an Economics student at National Taipei University with a double major in S
 
 My interests focus on data analysis, machine learning, and data engineering.
 
-My experience includes:
-
-• web scraping  
-• statistical analysis  
-• geospatial data processing  
-• data cleaning  
-• data automation  
+My experience includes web scraping, statistical analysis, geospatial data processing, and building data pipelines.
 
 </p>
 
@@ -301,97 +297,108 @@ My experience includes:
 
 </section>
 
-<!-- SKILLS -->
 
 <section id="skills" class="container">
 
-<h2 class="section-title">Skills</h2>
+<h2 class="section-title">Skills (Honest Comparison)</h2>
 
-<!-- Programming -->
+<div class="card">
 
-<div class="skills-category">
+<p style="opacity:0.8;margin-bottom:40px">
 
-<h3>Programming</h3>
+Instead of claiming unrealistic skill levels,  
+these bars compare my current level with typical professionals in the industry.
 
-<div class="skill-row">
+Transparency matters more than exaggeration.
 
-<div class="skill-item">
-Python
-<div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
-</div>
+</p>
 
-<div class="skill-item">
-SQL
-<div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
-</div>
 
-<div class="skill-item">
-JavaScript
-<div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
-</div>
+<div class="skill-compare">
 
-</div>
-
-</div>
-
-<!-- Data -->
-
-<div class="skills-category">
-
-<h3>Data Analysis & Statistics</h3>
+<p><b>Python</b></p>
 
 <div class="skill-row">
+<span class="label">Me</span>
+<div class="bar"><div class="me" style="width:60%"></div></div>
 
-<div class="skill-item">
-Statistical Analysis
-<div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-</div>
+<span class="label">Mid</span>
+<div class="bar"><div class="mid" style="width:80%"></div></div>
 
-<div class="skill-item">
-Data Cleaning
-<div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
-</div>
-
-<div class="skill-item">
-Exploratory Data Analysis
-<div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-</div>
-
-<div class="skill-item">
-Econometrics
-<div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+<span class="label">Senior</span>
+<div class="bar"><div class="senior" style="width:95%"></div></div>
 </div>
 
 </div>
 
-</div>
 
-<!-- Data Engineering -->
+<div class="skill-compare">
 
-<div class="skills-category">
-
-<h3>Data Engineering</h3>
+<p><b>SQL</b></p>
 
 <div class="skill-row">
+<span class="label">Me</span>
+<div class="bar"><div class="me" style="width:50%"></div></div>
 
-<div class="skill-item">
-Web Scraping
-<div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+<span class="label">Mid</span>
+<div class="bar"><div class="mid" style="width:75%"></div></div>
+
+<span class="label">Senior</span>
+<div class="bar"><div class="senior" style="width:90%"></div></div>
 </div>
 
-<div class="skill-item">
-Data Pipeline
-<div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
 </div>
 
-<div class="skill-item">
-Geospatial Data Processing
-<div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+
+<div class="skill-compare">
+
+<p><b>Statistics</b></p>
+
+<div class="skill-row">
+<span class="label">Me</span>
+<div class="bar"><div class="me" style="width:65%"></div></div>
+
+<span class="label">Mid</span>
+<div class="bar"><div class="mid" style="width:85%"></div></div>
+
+<span class="label">Senior</span>
+<div class="bar"><div class="senior" style="width:95%"></div></div>
 </div>
 
-<div class="skill-item">
-Automation
-<div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+</div>
+
+
+<div class="skill-compare">
+
+<p><b>Web Scraping</b></p>
+
+<div class="skill-row">
+<span class="label">Me</span>
+<div class="bar"><div class="me" style="width:70%"></div></div>
+
+<span class="label">Mid</span>
+<div class="bar"><div class="mid" style="width:85%"></div></div>
+
+<span class="label">Senior</span>
+<div class="bar"><div class="senior" style="width:95%"></div></div>
+</div>
+
+</div>
+
+
+<div class="skill-compare">
+
+<p><b>Machine Learning</b></p>
+
+<div class="skill-row">
+<span class="label">Me</span>
+<div class="bar"><div class="me" style="width:40%"></div></div>
+
+<span class="label">Mid</span>
+<div class="bar"><div class="mid" style="width:70%"></div></div>
+
+<span class="label">Senior</span>
+<div class="bar"><div class="senior" style="width:90%"></div></div>
 </div>
 
 </div>
@@ -400,7 +407,6 @@ Automation
 
 </section>
 
-<!-- EXPERIENCE -->
 
 <section id="experience" class="container">
 
@@ -445,7 +451,6 @@ Helping organize AI workshops and promoting statistics knowledge.
 
 </section>
 
-<!-- PROJECTS -->
 
 <section id="projects" class="container">
 
@@ -458,9 +463,7 @@ Helping organize AI workshops and promoting statistics knowledge.
 <h3>Agricultural Insurance Pricing</h3>
 
 <p>
-
 Research project exploring agricultural insurance pricing using the Ornstein-Uhlenbeck stochastic process within blockchain systems.
-
 </p>
 
 </div>
@@ -470,9 +473,7 @@ Research project exploring agricultural insurance pricing using the Ornstein-Uhl
 <h3>Technical Experiments</h3>
 
 <p>
-
 A collection of programming experiments and technical explorations.
-
 </p>
 
 <a href="https://github.com/papayaya123/Cool__thing">
@@ -487,7 +488,6 @@ A collection of programming experiments and technical explorations.
 
 </section>
 
-<!-- CONTACT -->
 
 <section id="contact" class="container">
 
@@ -499,21 +499,43 @@ A collection of programming experiments and technical explorations.
 <p>Phone: 0905594633</p>
 
 <a href="mailto:a0984311925@gmail.com">
-
 <button>Send Email</button>
-
 </a>
 
 </div>
 
 </section>
 
+
 <footer>
 
 © 2026 Tzu-Hsuan Yang
 
+<p id="easter" onclick="revealAI()" style="cursor:pointer;opacity:0.3">.</p>
+
+<p id="ai-joke" style="display:none;font-size:14px">
+
+This website was built with help from AI.
+
+Which raises two possibilities:
+
+1️⃣ I'm good at using AI  
+2️⃣ AI might replace me soon  
+
+Hopefully the first one.
+
+</p>
+
 </footer>
 
-</body>
 
+<script>
+
+function revealAI(){
+document.getElementById("ai-joke").style.display="block"
+}
+
+</script>
+
+</body>
 </html>
