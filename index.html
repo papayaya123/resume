@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Tzu-Hsuan Yang | Data Analyst</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+font-family:Inter, sans-serif;
+margin:0;
+background:#f4f7fb;
+color:#333;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.nav-container{
+max-width:1100px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+padding:15px 20px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+margin-left:20px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#2563eb;
+}
+
+/* HERO */
+
+header{
+background:#111827;
+color:white;
+padding:120px 20px 80px 20px;
+margin-top:60px;
+}
+
+.hero{
+max-width:1100px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.profile-img{
+width:170px;
+height:170px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #3b82f6;
+}
+
+.hero h1{
+margin:0;
+font-size:40px;
+}
+
+.hero p{
+opacity:0.85;
+}
+
+/* SECTIONS */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
+}
+
+.section-title{
+font-size:30px;
+margin-bottom:30px;
+border-left:6px solid #2563eb;
+padding-left:10px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+margin-bottom:25px;
+}
+
+/* SKILLS */
+
+.skills-category{
+margin-bottom:40px;
+}
+
+.skill-row{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.skill-item{
+background:#f8fafc;
+padding:15px;
+border-radius:8px;
+}
+
+.skill-bar{
+height:8px;
+background:#e5e7eb;
+border-radius:20px;
+margin-top:6px;
+overflow:hidden;
+}
+
+.skill-fill{
+height:100%;
+background:#2563eb;
+}
+
+/* EXPERIENCE */
+
+.timeline{
+border-left:3px solid #2563eb;
+padding-left:20px;
+}
+
+.timeline-item{
+margin-bottom:30px;
+}
+
+/* PROJECTS */
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project{
+transition:0.3s;
+cursor:pointer;
+}
+
+.project:hover{
+transform:translateY(-6px);
+}
+
+/* BUTTON */
+
+button{
+background:#2563eb;
+border:none;
+color:white;
+padding:10px 16px;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+color:#777;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="nav-container">
+
+<b>Tzu-Hsuan Yang</b>
+
+<div>
+
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<header>
+
+<div class="hero">
+
+<img src="photo.png" class="profile-img">
+
+<div>
+
+<h1>楊子玄</h1>
+
+<p>Data Analyst · Statistics · Data Engineering</p>
+
+<p>
+Economics @ National Taipei University <br>
+Double Major: Statistics · Minor: Computer Science
+</p>
+
+<p>
+
+<a href="mailto:a0984311925@gmail.com" style="color:#93c5fd">Email</a> |
+<a href="https://github.com/papayaya123" style="color:#93c5fd">GitHub</a>
+
+</p>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ABOUT -->
+
+<section id="about" class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+
+<p>
+
+I am an Economics student at National Taipei University with a double major in Statistics and a minor in Computer Science.
+
+My interests focus on data analysis, machine learning, and data engineering.
+
+My experience includes:
+
+• web scraping  
+• statistical analysis  
+• geospatial data processing  
+• data cleaning  
+• data automation  
+
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="container">
+
+<h2 class="section-title">Skills</h2>
+
+<!-- Programming -->
+
+<div class="skills-category">
+
+<h3>Programming</h3>
+
+<div class="skill-row">
+
+<div class="skill-item">
+Python
+<div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill-item">
+SQL
+<div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+</div>
+
+<div class="skill-item">
+JavaScript
+<div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+</div>
+
+</div>
+
+</div>
+
+<!-- Data -->
+
+<div class="skills-category">
+
+<h3>Data Analysis & Statistics</h3>
+
+<div class="skill-row">
+
+<div class="skill-item">
+Statistical Analysis
+<div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill-item">
+Data Cleaning
+<div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill-item">
+Exploratory Data Analysis
+<div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill-item">
+Econometrics
+<div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+</div>
+
+</div>
+
+</div>
+
+<!-- Data Engineering -->
+
+<div class="skills-category">
+
+<h3>Data Engineering</h3>
+
+<div class="skill-row">
+
+<div class="skill-item">
+Web Scraping
+<div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+</div>
+
+<div class="skill-item">
+Data Pipeline
+<div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+</div>
+
+<div class="skill-item">
+Geospatial Data Processing
+<div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill-item">
+Automation
+<div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience" class="container">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>Data Engineering Intern</h3>
+<b>Autopass</b> | 2025 – Present
+
+<p>
+Web scraping pipelines, geospatial mapping, data processing, and browser extension development.
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Research Assistant</h3>
+<b>Academia Sinica</b> | 2024 – 2025
+
+<p>
+Collected research datasets via scraping, validated data quality, and performed statistical analysis.
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Volunteer</h3>
+<b>Women in AI Taiwan</b> | 2022 – Present
+
+<p>
+Helping organize AI workshops and promoting statistics knowledge.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="container">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="project-grid">
+
+<div class="card project">
+
+<h3>Agricultural Insurance Pricing</h3>
+
+<p>
+
+Research project exploring agricultural insurance pricing using the Ornstein-Uhlenbeck stochastic process within blockchain systems.
+
+</p>
+
+</div>
+
+<div class="card project">
+
+<h3>Technical Experiments</h3>
+
+<p>
+
+A collection of programming experiments and technical explorations.
+
+</p>
+
+<a href="https://github.com/papayaya123/Cool__thing">
+
+<button>View GitHub</button>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="container">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card contact">
+
+<p>Email: a0984311925@gmail.com</p>
+<p>Phone: 0905594633</p>
+
+<a href="mailto:a0984311925@gmail.com">
+
+<button>Send Email</button>
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Tzu-Hsuan Yang
+
+</footer>
+
+</body>
+
+</html>
